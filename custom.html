@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>定制</title>
+		<link rel="stylesheet" href="css/diyart.css" />
+		<link rel="stylesheet" href="css/custom.css" />
+	</head>
+	<body>
+		<div class="banner-top noTxt">
+			<div class="header">
+				<h1><a href="http://www.artup.com"><img src="images/logo-common.png" alt="雅昌影像"></a></h1>
+				<ul>
+					<li class="header-buycar"><i></i>购物车<span class="shopNum">2</span></li>
+					<li class="header-register"><a href="register.html"><i></i>注册</a></li>
+					<li class="header-login"><i></i>登录</li>
+				</ul>
+			</div>
+			<div class="banner-button">
+				<h2>上传照片&nbsp;&nbsp;开始体验</h2>
+				<input type="button" value="上传图片" id="beginUpload">
+			</div>
+		</div>
+
+		<input type="file" name="file" id="fileupload_input"  style="display: none" />
+		<div class="custom-auto">
+			<ul class="choosetype">
+				<li class="typekh active">
+					<i></i>
+					<p>框画</p>
+					<small>Artron images</small>
+				</li>
+				<li class="typezpq">
+					<i></i>
+					<p>照片墙</p>
+					<small>Artron images</small>
+				</li>
+				<li class="typehc">
+					<i></i>
+					<p>画册</p>
+					<small>Artron images</small>
+				</li>
+				<li class="typehj">
+					<i></i>
+					<p>合集</p>
+					<small>Artron images</small>
+				</li>
+				<li class="typehb">
+					<i></i>
+					<p>海报</p>
+					<small>Artron images</small>
+				</li>
+			</ul>
+		</div>
+
+		<div class="custom-container">
+			<div class="custom-container-right">
+				<div class="custom-area-tit">价格<span class="con">¥<b class="price">45</b></span></div>
+				<div class="custom-area-size">成品尺寸<span class="con size">45&Chi;45CM</span></div>
+				<div class="custom-area-caizhi">我的作品<span class="con textureDetail">材质明细</span></div>
+				<div class="custom-area-button"><input type="button" class="joinShopping" value="加入购物车"></div>
+				<div class="custom-area-share">
+					<span>分享到</span>
+					<i class="sina"></i>
+					<i class="weixin"></i>
+					<i class="zone"></i>
+					<i class="douban"></i>
+				</div>
+				<div class="custom-area-sizeselect">尺寸选择<span class="con">
+						<select id="selchange">
+							<option value="0.5">37 x 53cm</option>
+							<option value="0.67">53 x 74cm</option>
+							<option value="0.75">74 x 53cm</option>
+						</select>
+					</span>
+				</div>
+				<div class="custom-area-cj">
+					<span>
+						<input type="button">
+						<a>客厅</a>
+						<a>卧室</a>
+						<a class="active">玄关</a>
+						<input class="right" type="button">
+					</span>
+				</div>
+				<!-- -->
+				<div id="framePicList">
+					<ul class="custom-area-maplist">
+						<li class="active"><img src="images/upimages.jpg"></li>
+						<li><img src="pages/1.jpg"><i class="check"></i><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="check"></i><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="check"></i><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="check"></i><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="check"></i><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="check"></i><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="check"></i><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="close"></i></li>
+					</ul>
+					<div class="custom-area-page">
+						<span class="current_page"></span>/<span class="total"></span>
+					<span class="con">
+						<input type="button" class="custom-area-page-left">
+						<input type="text" class="custom-area-page-input" value="1">
+						<input type="button" class="custom-area-page-right">
+					</span>
+					</div>
+				</div>
+				<div id="frameList" style="display:none;">
+					<ul class="custom-area-maplist">
+						<li class="active"><img src="images/upimages.jpg"></li>
+						<li><img src="pages/1.jpg"><i class="check"></i><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="check"></i><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="check"></i><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="check"></i><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="check"></i><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="check"></i><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="check"></i><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="close"></i></li>
+						<li><img src="images/register02.jpg"><i class="close"></i></li>
+					</ul>
+					<div class="custom-area-page">
+						<span class="current_page"></span>/<span class="total"></span>
+					<span class="con">
+						<input type="button" class="custom-area-page-left">
+						<input type="text" class="custom-area-page-input" value="1">
+						<input type="button" class="custom-area-page-right">
+					</span>
+					</div>
+				</div>
+
+				<div class="custom-area-maplist-select">
+					<a id="changjing" style="display: ;">场景</a>
+					<a class="active" data-type="pic">图片</a>
+					<a data-type="frame">画框</a>
+				</div>
+			</div><!-- End custom-container-right -->
+
+			<div class="custom-container-left">
+
+				<div class="custom-effect-block">
+					<!-- 框画产品效果开始 -->
+					<!--  铝框：lvkuang  木框：mukuang  同时改变大小，定位及内部画的大小和定位 -->
+					<div class="custom-kuanghua lvkuang" id="customKH">
+						<p class="t"></p>
+						<p class="r"></p>
+						<p class="b"></p>
+						<p class="l"></p>
+						<p class="lt"></p>
+						<p class="rt"></p>
+						<p class="rb"></p>
+						<p class="lb"></p>
+						<div class="image-editor">
+            					<div class="cropit-image-preview"></div>
+      					</div>
+					</div><!-- 框画产品效果结束 -->
+					<!-- 照片墙 -->
+					<div class="custom-zpq">
+						<img src="images/temp-zpq.jpg" usemap="#Map">
+                        <map name="Map">
+                          <area shape="rect" coords="89,280,173,403" href="#">
+                          <area shape="rect" coords="145,225,213,271" href="#">
+                          <area shape="rect" coords="183,281,304,363" href="#">
+                          <area shape="rect" coords="314,223,436,304" href="#">
+                          <area shape="rect" coords="222,150,304,267" href="#">
+                          <area shape="rect" coords="315,150,357,212" href="#">
+                          <area shape="rect" coords="369,149,412,212" href="#">
+                          <area shape="rect" coords="423,93,505,211" href="#">
+                        </map>
+						<input type="button" class="btn-artron zpqksdz" value="开始定制">
+					</div>
+
+				<!-- 画册 -->
+				<div class="custom-huace">
+					<div class="custom-huacebg"><img src="images/albumbg.jpg"></div>
+					<input type="button" class="btn-artron hcksdz" value="开始定制">
+
+					<div class="custom-huace-sc">
+						<div class="flipbook">
+	                        <div>
+	                        	<img src="pages/1.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/2.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/3.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/4.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/5.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/6.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/7.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/8.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/9.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/10.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/11.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/12.jpg" width="100%" height="100%">
+	                        </div>
+	                    </div>
+						<!-- <p><span>画册封面</span></p>
+						<p><span>画册内页</span></p> -->
+						<a class="custom-huace-lft"><!-- 向左 --></a>
+						<a class="custom-huace-rit"><!-- 向右 --></a>
+						<div class="user-row effect-heji-list-tit">
+							<span id="turnTo" style="cursor: pointer">跳转</span>
+							<span><font class="hcPage"></font> / <font class="hcTotal"></font><a class="custom-lft"> &lt;</a><input id="pageNum" type="text"><a class="custom-rit">&gt;</a></span>
+						</div>
+					</div>
+
+					<div class="custom-album" id="typehc" style="margin-left: -80px; display: none;">
+	                    <div class="flipbook">
+	                        <div>
+	                        	<img src="pages/1.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/2.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/3.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/4.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/5.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/6.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/7.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/8.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/9.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/10.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/11.jpg" width="100%" height="100%">
+	                        </div>
+	                        <div>
+	                        	<img src="pages/12.jpg" width="100%" height="100%">
+	                        </div>
+	                    </div>
+						<div style="margin-left: 380px; height: 36px; line-height: 36px;">
+		               		第<input type="text" id="pageNum"  style="width:20px;text-align: center"/>页
+		            	</div>
+					</div>
+				</div>
+
+
+					<!-- 合集产品效果开始 -->
+					<div class="effect-heji">
+						<input type="button" class="btn-artron hjksdz" value="开始定制">
+					</div><!--End effect-heji-->
+
+					<!-- 海报产品效果结束 -->
+					<div class="effect-haibao">
+						<div class="effect-haibao-con"></div>
+					</div><!-- End effect-haibao 海报结束 -->
+
+
+					<!-- 公用部分 -->
+
+					<!-- 产品标题和描述 -->
+					<div class="effect-description">
+						<h3>框画 Kuanghua</h3>
+						<p><b>艺美合金系——铝合金</b><br>优点：华丽庄重风，非凡品位<br>德国专利金属边框工艺，用艺术曲线打磨坚硬合金，相框持久性达200年，<br>从颜色到材质、工艺，无与伦比，你的高品质选择。</p>
+					</div>
+
+
+					<!-- 列表 -->
+					<div class="effect-heji-list">
+						<div class="user-row effect-heji-list-tit">
+							<div class="user-col-3">系统默认导入80张图片，也可勾选图片。</div>
+							<span>1/18 <a>&lt;</a><input type="text"><a>&gt;</a></span>
+						</div>
+						<ul class="effect-heji-list-con">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<div class="effect-heji-list-bottom">
+							<input type="button" class="btn-line" value="继续上传">
+							<input id="schj" type="button" class="btn-line" value="生成合集">
+						</div>
+						<a class="custom-huace-lft"><!-- 向左 --></a>
+						<a class="custom-huace-rit"><!-- 向右 --></a>
+					</div><!-- End effect-heji-list-con 列表结束 -->
+					<!-- 可左右切换大图-->
+					<div class="effect-heji-pop">
+						<p class="effect-heji-pop-con"><img src="images/temp-02.jpg"></p>
+						<div class="effect-heji-pop-bottom">1/18 <a>&lt;</a><input type="text"><a>&gt;</a></div>
+						<a class="effect-heji-pop-lft">&lt;</a>
+						<a class="effect-heji-pop-rit">&gt;</a>
+						<a class="close">×</a>
+					</div><!-- End effect-heji-pop -->
+
+
+				</div><!-- custom-effect-block 左侧效果容器 -->
+
+
+			</div><!-- End custom-container-left -->
+
+		</div>
+
+		<div class="art-footer">
+			<div class="art-footer-con">
+				<div class="art-footer-con-left">
+					<span>关注我们：</span>
+					<img src="images/erweicode.jpg">
+				</div>
+				<div class="art-footer-con-right">
+					<a href="#">关于雅昌</a>
+					<a href="#">加入雅昌</a>
+					<a href="#">联系我们</a>
+					<a href="#">版权签约</a>
+				</div>
+			</div>
+		</div>
+		<div class="art-copyright">
+			<div class="art-copyright-con">京ICP备：13034505号-1&nbsp;&nbsp;北京雅昌艺术影像有限公司&nbsp;&nbsp;京公网安备11011302000949号</div>
+		</div>
+
+<!-- 材质展示 -->
+<div class="effect-caizhi" id="caizhiDialog">
+	<div class="effect-caizhi-con">
+		<p><img class="currCaizhiimg" src="images/hs(YY-1)-kj.jpg"></p>
+		<ul>
+			<h3>简装合集</h3>
+			<li><img src="images/hs(YY-1)-kj.jpg"></li>
+			<li><img src="images/hs(YY-2)-kj.jpg"></li>
+			<li><img src="images/ys(YY-1)-kj.jpg"></li>
+			<li><img src="images/ys(YY-2)-kj.jpg"></li>
+			<li><img src="images/ys(YY-6)-kj.jpg"></li>
+		</ul>
+		<a class="close">×</a>
+	</div>
+</div>
+
+		<script type="text/javascript" src="js/jquery.1.11.3.js" ></script>
+		<script src="js/jquery.ui.widget.js"></script>
+		<script src="js/jquery.iframe-transport.js"></script>
+		<script src="js/jquery.fileupload.js"></script>
+		<script type="text/javascript" src="js/turn.js" ></script>
+		<script type="text/javascript" src="js/jquery.cropit.js"></script>
+		<script src="js/public.js"></script>
+		<script type="text/javascript" src="js/custom.js" ></script>
+		<!--<script>
+			$('#changjing').hide();
+			$('.custom-area-cj').hide();
+			$(function(){
+				$('.typekh').click(function(){
+					$('#changjing').hide();
+					$('.custom-area-cj').hide();
+					$('.effect-heji-list, .effect-heji-pop').hide();
+					$('.custom-kuanghua').fadeIn('slow');
+					$('.custom-zpq').hide();
+					$('.custom-huace').hide();
+					$('.effect-heji').hide();
+					$('.effect-haibao').hide();
+					$('.effect-description').find('h3').html('框画 Kuanghua');
+					$('.effect-description').find('p').html('<b>艺美合金系——铝合金</b><br>优点：华丽庄重风，非凡品位<br>德国专利金属边框工艺，用艺术曲线打磨坚硬合金，相框持久性达200年，<br>从颜色到材质、工艺，无与伦比，你的高品质选择。');
+				});
+				$('.typezpq').click(function(){
+					$('#changjing').show();
+					$('.custom-area-cj').show();
+					$('.effect-heji-list, .effect-heji-pop').hide();
+					$('.custom-kuanghua').hide();
+					$('.custom-zpq').fadeIn();
+					$('.custom-huace').hide();
+					$('.effect-heji').hide();
+					$('.effect-haibao').hide();
+					$('.effect-description').find('h3').html('照片墙  zhaopianqiang');
+					//$('.effect-description').find('p').html('框画描述');
+				});
+				$('.typehc').click(function(){
+					$('#changjing').hide();
+					$('.custom-area-cj').hide();
+					$('.effect-heji-list, .effect-heji-pop').hide();
+					$('.custom-kuanghua').hide();
+					$('.custom-zpq').hide();
+					$('.custom-huace').fadeIn();
+					$('.effect-heji').hide();
+					$('.effect-haibao').hide();
+					$('.effect-description').hide();
+					//$('.effect-description').find('p').html('框画描述');
+				});
+				$('.typehj').click(function(){
+					$('#changjing').hide();
+					$('.custom-area-cj').hide();
+					$('.effect-heji-list, .effect-heji-pop').hide();
+					$('.custom-kuanghua').hide();
+					$('.custom-zpq').hide();
+					$('.custom-huace').hide();
+					$('.effect-heji').fadeIn();
+					$('.effect-haibao').hide();
+					$('.effect-description').find('h3').html('合集 Heji');
+					//$('.effect-description').find('p').html('框画描述');
+				});
+				$('.typehb').click(function(){
+					$('#changjing').hide();
+					$('.custom-area-cj').hide();
+					$('.effect-heji-list, .effect-heji-pop').hide();
+					$('.custom-kuanghua').hide();
+					$('.custom-zpq').hide();
+					$('.custom-huace').hide();
+					$('.effect-heji').hide();
+					$('.effect-haibao').fadeIn();
+					$('.effect-description').find('h3').html('海报 Haibao');
+					$('.effect-description').find('p').html('超高分辨率纳米级的清晰度，HP千万级输出设备，配合防水防皱的影像高端相纸并配有万能贴及精美圆筒包装，可以展示于墙面、桌面、隔板及镜面上，是影像展示的新形态。');
+				});
+
+				//照片墙图片放大
+				$('.custom-zpq area').click(function(){
+					$('.effect-heji-pop').fadeIn();
+				});
+				//开始定制
+				$('.hjksdz, .zpqksdz').click(function(){
+					$('.effect-heji-list').fadeIn();
+				});
+				//画册开始定制
+				$('.hcksdz').click(function(){
+					$(this).hide();
+					$('.custom-huacebg').hide();
+					$('.effect-heji-list').fadeIn();
+				});
+				//画册下生成合集
+				$('#schj').click(function(){
+					$('.effect-heji-list').hide();
+					$('.custom-huace-sc').fadeIn('slow');
+				});
+
+				$('.effect-heji-list li').click(function(){
+					$('.effect-heji-pop').fadeIn();
+				});
+
+				$('.effect-caizhi li').click(function(){
+					var img = $(this).find('img').attr('src');
+					$('.effect-caizhi p').find('img').attr('src', img);
+				})
+				$('.effect-heji-pop .close').click(function(){
+					$('.effect-heji-pop').fadeOut();
+				});
+				$('.effect-caizhi-con .close').click(function(){
+					$('.effect-caizhi').fadeOut();
+				})
+			})
+		</script>-->
+	</body>
+</html>

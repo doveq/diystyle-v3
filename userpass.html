@@ -1,0 +1,87 @@
+<!--
+	作者：gaochangqing@artron.net
+	时间：2015-06-30
+	描述：用户中心
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的订单</title>
+		<link rel="stylesheet" href="css/diyart.css" />
+		<link rel="stylesheet" href="css/usercenter.css" />
+	</head>
+	<body>
+		<div class="banner-top">
+			<div class="header">
+				<h1><a href="http://www.artup.com"><img src="images/logo-common.png" alt="雅昌影像"></a></h1>
+				<ul>
+					<li class="header-buycar"><i></i>购物车</li>
+					<li class="header-register"><a href="register.html"><i></i>注册</a></li>
+					<li class="header-login"><i></i>登录</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="usercenter">
+			<div class="usercenter-left">
+				<h3><i></i>Home</h3>
+				<ul>
+					<li class="yhzx"><a href="usercenter.html"><i></i>用户中心</a></li>
+					<li class="wddd"><a href="userorder.html"><i></i>我的订单</a></li>
+					<li class="sqthh"><a href="userreturn.html"><i></i>申请退换货</a></li>
+					<li class="dzgl"><a href="userdress.html"><i></i>地址管理</a></li>
+					<li class="yhqgl"><a href="usercoupon.html"><i></i>优惠券管理</a></li>
+					<li class="mmgl active"><a href="userpass.html"><i></i>密码管理</a></li>
+				</ul>
+			</div>
+			<div class="usercenter-right">
+				<h3>密码管理</h3>
+
+				<div class="usercenter-pass">
+					<div class="">
+						<div class="user-row">
+							<span class="user-col-1">当前密码：</span>
+							<input id="currentpas" class="user-col-3" type="password">
+							<span class="user-col-3"></span>
+							<span id="currentpas-error" style="color: red; line-height: 2;display:none"></span>
+						</div>
+						<div class="user-row">
+							<span class="user-col-1">新密码：</span>
+							<input id="newpsd" class="user-col-3" type="password">
+							<span id="newpsd-error" style="color: red; line-height: 2;display:none"></span>
+						</div>
+						<div class="user-row">
+							<span class="user-col-1">确认密码：</span>
+							<input id="renewpsd" class="user-col-3" type="password">
+							<span id="renewpsd-error" style="color: red; line-height: 2;display:none"></span>
+						</div>
+					</div>
+					<div class="usercenter-dressbtn">
+						<input type="button" value="保存">
+					</div>
+				</div>
+			</div><!-- End usercenter-right -->
+		</div><!--End usercenter-->
+
+		<div class="art-footer">
+			<div class="art-footer-con">
+				<div class="art-footer-con-left">
+					<span>关注我们：</span>
+					<img src="images/erweicode.jpg">
+				</div>
+				<div class="art-footer-con-right">
+					<a href="#">关于雅昌</a>
+					<a href="#">加入雅昌</a>
+					<a href="#">联系我们</a>
+					<a href="#">版权签约</a>
+				</div>
+			</div>
+		</div>
+		<div class="art-copyright">
+			<div class="art-copyright-con">京ICP备：13034505号-1&nbsp;&nbsp;北京雅昌艺术影像有限公司&nbsp;&nbsp;京公网安备11011302000949号</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.1.11.3.js" ></script>
+		<script type="text/javascript" src="js/userpass.js" ></script>
+	</body>
+</html>

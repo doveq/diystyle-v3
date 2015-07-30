@@ -1,0 +1,127 @@
+<!--
+	作者：gaochangqing@artron.net
+	时间：2015-06-27
+	描述：注册页
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册/登录</title>
+		<link rel="stylesheet" href="css/idangerous.swiper.css" />
+		<link rel="stylesheet" href="css/diyart.css" />
+	</head>
+	<body>
+		<div class="swiper-container register">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide register01"></div>
+				<div class="swiper-slide register02"></div>
+			</div>
+			<div class="swiper-pagination register-pagination"></div>
+			<!-- 以下：内容区域 -->
+			<div class="register-con">
+				<div class="register-con-lft">
+					<h3 class="logo"><a href="http://www.artup.com"><img src="images/logo-wite.png"></a></h3>
+					<div id="formH" class="formCon" style="display:none;">
+						<ul class="fromlist">
+							<!-- 获得焦点时清空，并添加【entry 】--><li class="name"><input class="user" autocomplete="off" type="text" value="手机/邮箱" placeholder="手机/邮箱"><i class="dui"><!-- 正确显示此标签 错误用 class="cuo" --></i></li>
+							<li class="pass"><input type="password" autocomplete="off" class="passport" placeholder="密码" maxlength="12"><!-- 判断为ie时显示【enter_psw】 --><span class="enter_psw">密码</span></li>
+							<li class="code"><input type="password"  autocomplete="off" placeholder="再次确认密码" class="passportAgain" maxlength="12"><!-- 判断为ie时显示【enter_psw】 --><span class="enter_psw">再次确认密码</span></li>
+							<li class="text">
+								<span class="errorTip" style="color: white;float:left;"></span>
+								<a id="registerNote">找回密码</a>
+							</li>
+							<li class="btn"><input class="active" type="submit" value="注册"></li>
+
+							<li id="loginType" class="loginChoose">
+								<span>使用以下账号登录：</span>
+								<i class="qq"><a href="#" target="_blank"></a></i>
+								<i class="weixin"><a href="#" target="_blank"></a></i>
+								<i class="sina"><a href="#" target="_blank"></a></i>
+							</li>
+						</ul>
+					</div>
+                    <!-- 找回密码 填写手机或邮箱 -->
+                    <div class="formCon formTxt" id="forgetPassport" style="display:none;">
+						<ul class="fromlist">
+							<!-- 获得焦点时清空，并添加【entry 】--><li class="txt"><input class="user" autocomplete="off" type="text" value="手机/邮箱" placeholder="手机/邮箱"></li>
+                            <li class="notice">手机号或邮箱不存在，请重新输入</li>
+                            <li class="btn"><!-- 验证成功请移除【default】接口 --><input class="active" type="submit" value="找回密码"></li>
+						</ul>
+                    </div><!-- 回密码 填写手机或邮箱 结束 -->
+                    <!-- 手机验证码 -->
+                    <div class="formCon" id="mobileFindPwd" style="display:none;">
+						<ul class="fromlist">
+							<li class="txt num"><input class="user" autocomplete="off" type="text" readonly value=""></li>
+							<!-- 获得焦点时清空，并添加【entry 】--><li class="safecode"><input  autocomplete="off" value="验证码" class="safecodetxt" maxlength="6" type="text"><input class="safecodebtn default" type="button" value="60秒后重新发送"><!-- 60秒后改为【获取验证码】，移除【default】接口 --></li>
+							<li class="notice"></li>
+                            <li class="btn"><!-- 验证成功请移除【default】接口 --><input class="active" type="submit" value="下一步"></li>
+						</ul>
+                    </div><!-- 手机验证码结束 -->
+                    <!-- 发送邮件 -->
+                    <div class="formCon formTxt" id="emailFindPwd" style="display:none;">
+						<ul class="fromlist">
+							<li class="txt num"><input class="user" autocomplete="off" type="text" readonly value=""></li>
+                            <li class="btn"><!-- 验证成功请移除【default】接口 --><input class="active" type="submit" value="发送邮件"></li>
+						</ul>
+                    </div><!-- 发送邮件 结束 -->
+                    <div class="formCon formSuc" id="resetPwdSuccess" style="display:none;">
+						<ul class="fromlist">
+							<li class="successTit">恭喜，帐号<span class="username">anlb</span>重置密码成功！</li>
+                            <li class="btn"><!-- 验证成功请移除【default】接口 --><input class="active" type="submit" value="直接登录"></li>
+						</ul>
+                    </div><!-- 发送邮件 结束 -->
+                    <div class="formCon formChange" id="resetPassport" style="display:none;">
+						<ul class="fromlist">
+							<li class="tips">您正在找回的账号是：<span class="username">artron</span></li>
+                            <li class="pass"><input type="password" class="passport" autocomplete="off" placeholder="请填写新密码" maxlength="12"><!-- 判断为ie时显示【enter_psw】 --></li>
+							<li class="code"><input type="password" class="passportAgain" autocomplete="off" placeholder="请确认新密码" maxlength="12"><!-- 判断为ie时显示【enter_psw】 --></li>
+							<li class="text">
+								<span class="errMsg" style="color: white;float:left;"></span>
+							</li>
+                            <li class="btn"><!-- 验证成功请移除【default】接口 --><input class="active" type="submit" value="确定"></li>
+						</ul>
+                    </div><!-- 发送邮件 结束 -->
+                    <div class="formCon formBind">
+						<ul class="fromlist">
+                            <li class="tips">创建传给雅昌账号，绑定现在的社交账号</li>
+							<!-- 获得焦点时清空，并添加【entry 】--><li class="name"><input class="user" autocomplete="off" type="text" value="手机/邮箱" placeholder="手机/邮箱"><i class="dui"><!-- 正确显示此标签 错误用 class="cuo" --></i></li>
+							<li class="pass"><input type="password" autocomplete="off" class="passport" placeholder="密码" maxlength="12"><!-- 判断为ie时显示【enter_psw】 --><span class="enter_psw">密码</span></li>
+							<li class="code"><input type="password"  autocomplete="off" placeholder="再次确认密码" class="passportAgain" maxlength="12"><!-- 判断为ie时显示【enter_psw】 --><span class="enter_psw">再次确认密码</span></li>
+							<li class="text">
+								<span class="errorTip" style="color: white;float:left;"></span>
+							</li>
+							<li class="btn"><input class="active" type="submit" value="创建并绑定"></li>
+						</ul>
+                    </div><!-- 发送邮件 结束 -->
+					<!-- 注册后邮件验证 -->
+					<div class="register-email-check" style="display:none;">
+						<h3>验证邮箱 完成注册</h3>我们已将验证邮件发送到信箱：<a class="email" href="#" target="_blank">llp@artron.net</a>点击邮件内的链接即可完成注册，并可使用传给雅昌的所有功能。<hr /><h3>没收到邮件?</h3>查看邮件是否在垃圾邮件，广告邮件等分类中。稍等几分钟，若依然未收到邮件&nbsp;<a class="emailLink" href="#" target="_blank">重发验证邮件</a>
+					</div>
+					<!-- 注册后邮件验证结束 -->
+					<!-- 找回密码邮件发送提示信息 -->
+					<div class="register-email-check" id="emailFindPwdFinish" style="display:none;">
+						<h3>找回密码</h3>我们已将找回密码邮件发送到信箱：<a class="email" href="#" target="_blank">llp@artron.net</a>点击邮件内的链接即可找回密码。<hr /><h3>没收到邮件?</h3>查看邮件是否在垃圾邮件，广告邮件等分类中。稍等几分钟，若依然未收到邮件&nbsp;<a class="emailLink" href="javascript:;">重发验证邮件</a>
+					</div>
+					<!-- 找回密码邮件发送提示信息 结束 -->
+				</div>
+				<div class="register-con-rit">
+					<h4>
+						传给雅昌，专业在线图片输出
+						<small>
+							ONE IMAGE <br> ONE MASTERPIECE
+						</small>
+					</h4>
+                    <div class="tipsCon">已有传给雅昌账号，使用已有的账号绑定社交账号</div>
+					<p><input id="" type="button" value="绑定账号"><!-- 显示单个按钮的时候去的【twins】接口 --><!--<p><input id="registerBtn" class="twins" type="button" value="注册"><input id="loginBtn" class="twins" type="button" value="登录"></p>-->
+				</div>
+
+			</div><!-- End register-con -->
+		</div><!-- End swiper-container -->
+
+		<script type="text/javascript" src="js/jquery.1.11.3.js" ></script>
+		<script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+		<script src="js/public.js"></script>
+		<script type="text/javascript" src="js/register.js" ></script>
+	</body>
+</html>

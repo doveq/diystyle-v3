@@ -1,0 +1,180 @@
+<!--
+	作者：gaochangqing@artron.net
+	时间：2015-06-30
+	描述：用户中心
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户中心</title>
+		<link rel="stylesheet" href="css/diyart.css" />
+		<link rel="stylesheet" href="css/usercenter.css" />
+	</head>
+	<body>
+		<div class="banner-top">
+			<div class="header">
+				<h1><a href="http://www.artup.com"><img src="images/logo-common.png" alt="雅昌影像"></a></h1>
+				<ul>
+					<li class="header-buycar"><i></i>购物车</li>
+					<li class="header-register"><a href="register.html"><i></i>注册</a></li>
+					<li class="header-login"><i></i>登录</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="usercenter">
+			<div class="usercenter-left">
+				<h3><i></i>Home</h3>
+				<ul>
+					<li class="yhzx active"><a href="usercenter.html"><i></i>用户中心</a></li>
+					<li class="wddd"><a href="userorder.html"><i></i>我的订单</a></li>
+					<li class="sqthh"><a href="userreturn.html"><i></i>申请退换货</a></li>
+					<li class="dzgl"><a href="userdress.html"><i></i>地址管理</a></li>
+					<li class="yhqgl"><a href="usercoupon.html"><i></i>优惠券管理</a></li>
+					<li class="mmgl"><a href="userpass.html"><i></i>密码管理</a></li>
+				</ul>
+			</div>
+			<div class="usercenter-right">
+				<h3>个人资料</h3>
+				<div class="usercenter-personal">
+					<div class="usercenter-personal-left">
+						<div class="personal-map">
+							<img src="images/personal-male.jpg">
+							<!--<img src="images/personal-female.jpg"> 女头像 -->
+							<a href="#upmap">上传头像</a>
+						</div>
+					</div>
+
+					<div class="usercenter-personal-right">
+						<div class="user-row">
+							<span class="user-col-tit">昵称：</span>
+							<span class="user-col-2"><input id="nickname" type="text" value="" placeholder="思密达"></span>
+						</div>
+						<div class="user-row">
+							<span class="user-col-tit">性别：</span>
+							<span class="user-col-1"><label class="active"><input name="xb" type="radio" checked="checked" value="1">男</label></span>
+							<span class="user-col-1"><label><input name="xb" type="radio" value="0">女</label></span>
+						</div>
+						<div class="user-row">
+								<span class="user-col-tit">生日：</span>
+								<span class="user-col-1">
+									<select class="sel_year" rel="2015"></select>
+								</span>
+								<span class="user-col-1">
+									 <select class="sel_month" rel="1"></select>
+								</span>
+								<span class="user-col-1">
+									 <select class="sel_day" rel="1"></select>
+								</span>
+								<span class="user-col-1">
+									<select id="xz">
+										<option>白羊座</option>
+										<option>金牛座</option>
+										<option>双子座</option>
+										<option>巨蟹座</option>
+										<option>狮子座</option>
+										<option>处女座</option>
+										<option>天秤座</option>
+										<option>天蝎座</option>
+										<option>射手座</option>
+										<option>摩羯座</option>
+										<option>水瓶座</option>
+										<option>双鱼座</option>
+									</select>
+								</span>
+						</div>
+						<!-- 生日结束 -->
+						<div class="user-row" id="nowAddress">
+								<span class="user-col-tit">居住地：</span>
+								<span class="user-col-1">
+									<select class="province" style="width:90px;"></select>
+								</span>
+								<span class="user-col-1">
+									<select class="city" style="width:90px;"></select>
+								</span>
+								<span class="user-col-1">
+									<select class="area" style="width:90px;"></select>
+								</span>
+						</div>
+						<!-- 居住地结束 -->
+						<div class="user-row" id="homeAddress">
+								<span class="user-col-tit">家乡：</span>
+								<span class="user-col-1">
+									<select class="province" style="width:90px;"></select>
+								</span>
+								<span class="user-col-1">
+									<select class="city" style="width:90px;"></select>
+								</span>
+								<span class="user-col-1">
+									<select class="area" style="width:90px;"></select>
+								</span>
+						</div>
+						<!-- 家乡结束 -->
+					</div>
+				</div>
+				<div class="usercenter-personal-button"><input type="button" value="保存"></div>
+				<a id="upmap"></a>
+				<div class="usercenter-upmap">
+					<div class="usercenter-upmap-left">
+						<div class="usercenter-uplocal"><input type="button" value="本地上传"></div>
+						<div class="usercenter-upmap-text">仅支持小于5M的jpg，gif，png图片。</div>
+						<div class="usercenter-upmaparea"><!-- 上传图片编辑区域 --></div>
+					</div>
+
+					<div class="usercenter-personal-left">
+						<div class="personal-map">
+							<img src="images/personal-male.jpg">
+							<img src="images/personal-female.jpg"><!-- 男女对应头像 -->
+						</div>
+					</div>
+				</div>
+				<div class="usercenter-personal-button"><input class="ok" type="button" value="保存成功"><input type="button" value="保存"></div>
+
+			</div><!-- End usercenter-personal -->
+		</div><!--End usercenter-->
+
+		<div class="art-footer">
+			<div class="art-footer-con">
+				<div class="art-footer-con-left">
+					<span>关注我们：</span>
+					<img src="images/erweicode.jpg">
+				</div>
+				<div class="art-footer-con-right">
+					<a href="#">关于雅昌</a>
+					<a href="#">加入雅昌</a>
+					<a href="#">联系我们</a>
+					<a href="#">版权签约</a>
+				</div>
+			</div>
+		</div>
+		<div class="art-copyright">
+			<div class="art-copyright-con">京ICP备：13034505号-1&nbsp;&nbsp;北京雅昌艺术影像有限公司&nbsp;&nbsp;京公网安备11011302000949号</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.1.11.3.js" ></script>
+		<script type="text/javascript" src="js/birthday.js"></script>
+		<script type="text/javascript" src="js/jquery-related.js"></script>
+		<script src="js/usercenter.js"></script>
+		<script>
+		$(function () {
+			//日期选择
+			$().ms_DatePicker({
+	            YearSelector: ".sel_year",
+	            MonthSelector: ".sel_month",
+	            DaySelector: ".sel_day"
+	    	});
+			//省份级联
+			$("#nowAddress").related({
+				S1:".province",
+				S2:".city",
+				S3:".area"
+			});
+			$("#homeAddress").related({
+				S1:".province",
+				S2:".city",
+				S3:".area"
+			});
+		})
+	</script>
+	</body>
+</html>

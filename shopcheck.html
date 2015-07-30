@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>核实订单信息</title>
+<link rel="stylesheet" href="css/diyart.css" />
+<link rel="stylesheet" href="css/wait.css" />
+
+<link rel="stylesheet" href="css/usercenter.css" />
+</head>
+<body>
+	<div class="wait-banner-top">
+		<div class="header">
+			<h1>
+				<a href="http://www.artup.com"><img src="images/logo-common.png" alt="雅昌影像"></a>
+			</h1>
+			<ul>
+				<li class="header-buycar"><i></i>购物车</li>
+				<li class="header-register"><a href="register.html"><i></i>注册</a></li>
+				<li class="header-login"><i></i>登录</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="s32"></div>
+	<div class="wait-state">
+		<ul>
+			<li class="wait-state-gwc"><i></i> 购物车</li>
+			<li class="wait-state-hsdd active"><i></i> 核实订单信息</li>
+			<li class="wait-state-ddzf"><i></i> 等待支付</li>
+			<li class="wait-state-zfcg"><i></i> 支付成功</li>
+		</ul>
+	</div>
+
+	<div class="wait-written f-cele">
+		<p>首页 > 购物车 > 核实订单信息</p>
+		<h3>填写并核实订单信息</h3>
+
+		<div class="wait-check">
+				<div class="usercenter-dress">
+					<div class="addressCon">
+						<div class="thead fix">
+								<div class="td"><span>收货人信息</span><label><a href="javascript:void(0)" id="addAddress">+新增收货地址</a></label></div>
+						</div>
+						<div class="tbody" id="addressList">
+                             <div class="tr fix usercenter-dressadd" id="addOrEditAddress" style="display:none;">
+                                <a id="dressadd"><!-- 链接锚点 --></a>
+                                <h3>收货地址</h3>
+                                <div class="usercenter-dressaddcon" id="addOrEditAddress">
+                                    <div class="user-row">
+                                        <span class="user-col-2"><i>*</i>收货人：</span>
+                                        <input class="user-col-4 person" type="text">
+                                        <span class="error" style="color: red; line-height: 2;display:none"></span>
+                                    </div>
+                                    <div class="user-row shippingAddress">
+                                        <span class="user-col-2"><i>*</i>收货地区：</span>
+                                        <span class="user-col-1">
+                                            <select class="province" style="width:90px;"></select>
+                                        </span>
+                                        <span class="user-col-1">
+                                            <select class="city" style="width:90px;"></select>
+                                        </span>
+                                        <span class="user-col-1">
+                                            <select class="area" style="width:90px;"></select>
+                                        </span>
+                                        <span class="error" style="color: red; line-height: 2;display:none">1111111</span>
+                                    </div>
+                                    <div class="user-row">
+                                        <span class="user-col-2"><i>*</i>详细地址：</span>
+                                        <input class="user-col-4 detdress" type="text">
+                                        <span class="error" style="color: red; line-height: 2;display:none">1111111</span>
+                                    </div>
+                                    <div class="user-row">
+                                        <span class="user-col-2"><i>*</i>邮政编码：</span>
+                                        <input class="user-col-4 postcode" type="text">
+                                        <span class="error" style="color: red; line-height: 2;display:none">1111111</span>
+                                    </div>
+                                    <div class="user-row">
+                                        <span class="user-col-2"><i>*</i>手机：</span>
+                                        <input class="user-col-4 phone" type="tel">
+                                        <span class="error" style="color: red; line-height: 2;display:none">1111111</span>
+                                    </div>
+                                </div>
+                                <div class="usercenter-dressbtn fix"><input type="button" class="submitBtn" value="确认收货地址" /><a href="javascript:;" class="cancelBtn">取消</a></div>
+                            </div>
+							<div class="user-row tr defAdd fix">
+								<div class="td"><address>北京市顺义区天竺镇空港开发区　100024<br>张某某　186****0011</address></div>
+								<div class="td toolBar"><span>编辑</span><span>删除</span><span>设为默认地址</span></div>
+							</div>
+							<div class="tr user-row fix">
+								<div class="td"><address>北京市顺义区天竺镇空港开发区　100024<br>张某某　186****0011</address></div>
+								<div class="td toolBar"><span>编辑</span><span>删除</span><span>设为默认地址</span></div>
+							</div>
+						</div>
+					</div>
+				</div><!-- End usercenter-dress -->
+
+			<div class="usercenter-order">
+				<table class="userorderlist" cellpadding="0" cellspacing="0">
+					<thead>
+						<tr>
+							<th width="28%"></th>
+							<th width="26%">商品信息</th>
+							<th width="17%">单价</th>
+							<th width="8%">数量</th>
+							<th class="totalPrice" width="21%">总价</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><img src="images/temp-01.jpg"></td>
+							<td>商品形式: 框画 <br>尺寸: 40x40 厘米<br>画框: 诺丁山蓝色宽边画框<br></td>
+							<td><i>&yen;&nbsp;186.00</i></td>
+							<td>1</td>
+							<td class="totalPrice"><i class="bold">&yen;&nbsp;186.00</i></td>
+						</tr>
+						<tr>
+							<td><img src="images/temp-01.jpg"></td>
+							<td>商品形式: 框画 <br>尺寸: 40x40 厘米<br>画框: 诺丁山蓝色宽边画框<br></td>
+							<td><i>&yen;&nbsp;186.00</i></td>
+							<td>1</td>
+							<td class="totalPrice"><i class="bold">&yen;&nbsp;186.00</i></td>
+						</tr>
+						<tr>
+							<td colspan="4"><input class="wait-beizhu" type="text"
+								placeholder="填写备注，限50个字。"></td>
+							<td class="totalPrice"><label id="backshop">返回购物车修改</label></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="wait-block">
+				<div class="user-row">
+					<span class="user-col-1">支付金额：</span> <span class="user-col-1 cart total"><b>￥186.00</b></span>
+				</div>
+				<div class="user-row" id="payway">
+					<span class="user-col-1">支付方式：</span> <span
+						class="user-col-1 paytype-zfb active" id="Alipay"><i></i></span> <span
+						class="user-col-1 paytype-wx" id="WxOnline"><i></i></span> <span
+						class="user-col-1 paytype-wy" id="ChinaBank"><i></i></span>
+				</div>
+				<div class="Wait_yh01">
+						<div class="Wait_yh03" id = "bankselect">
+							<ul class="bank-ul">
+								<li>
+                                    <div class="CUP_rb">
+										<input name="bank" id="gsyh" type="radio"  data-type="bank" value="1025" />
+                                    </div>
+									<label for="gsyh">
+										<img src="https://pay3.chinabank.com.cn/i/bank_gsyh2.gif" alt="中国工商银行" align="middle" />
+									</label>
+								</li>
+								<li>
+                                <div class="CUP_rb">
+									<input name="bank" id="zsyh" type="radio" data-type="bank" value="308" /></div>
+									<label for="zsyh">
+										<img src="https://pay3.chinabank.com.cn/i/bank_zsyh2.gif" alt="招商银行" align="middle" />
+									</label>
+								</li>
+								<li>
+                                <div class="CUP_rb">
+									<input name="bank" id="jsyh" type="radio" data-type="bank" value="105" /></div>
+									<label for="jsyh">
+										<img src="https://pay3.chinabank.com.cn/i/bank_jsyh2.gif" alt="中国建设银行" align="middle" />
+									</label>
+								</li>
+								<li>
+                                <div class="CUP_rb">
+									<input name="bank" id="nyyh" type="radio" data-type="bank" value="103" /></div>
+									<label for="nyyh">
+										<img src="https://pay3.chinabank.com.cn/i/bank_nyyh2.gif" alt="中国农业银行" align="middle" />
+									</label>
+								</li>
+								<li>
+                                <div class="CUP_rb">
+									<input name="bank" id="zgyh" type="radio" data-type="bank" value="104" /></div>
+									<label for="zgyh">
+										<img src="https://pay3.chinabank.com.cn/i/bank_zgyh2.gif" alt="中国银行" align="middle" />
+									</label>
+								</li>
+								<li  style="clear:both;">
+                                <div class="CUP_rb">
+									<input name="bank" id="jtyh" type="radio" data-type="bank" value="301" /></div>
+									<label for="jtyh">
+										<img src="https://pay3.chinabank.com.cn/i/bank_jtyh.gif" alt="交通银行" align="middle" />
+									</label>
+								</li>
+								<li>
+                                <div class="CUP_rb">
+									<input  name="bank" id="hxyh" type="radio" data-type="bank" value="3283" /></div>
+									<label for="hxyh">
+										<img src="https://pay3.chinabank.com.cn/i/bank_hxyh.gif" alt="华夏银行" align="middle" />
+									</label>
+								</li>
+								<li>
+                                <div class="CUP_rb">
+									<input name="bank" id="xyyh" type="radio" data-type="bank" value="309" /></div>
+									<label for="xyyh">
+										<img src="https://pay3.chinabank.com.cn/i/bank_xyyh.gif" alt="兴业银行" align="middle" />
+									</label>
+								</li>
+								<li>
+                                <div class="CUP_rb">
+									<input name="bank" id="msyh" type="radio" data-type="bank" value="305" /></div>
+									<label for="msyh">
+										<img src="https://pay3.chinabank.com.cn/i/bank_msyh2.gif" alt="中国民生银行" align="middle" />
+									</label>
+									<div id="sub_msyh" class="CUP_rd" style="display: none;height: 10px;">
+										<input type="radio" data-type="bank" id="bank-sub-3" data-bank="msyh" name="sub" value="305" />
+										<label for="bank-sub-3">卡支付</label>
+										<input type="radio" data-type="bank" id="bank-sub-4" data-bank="msyh" name="sub" value="3051"/>
+										<label for="bank-sub-4">网银支付</label>
+									</div>
+								</li>
+								<li>
+                                <div class="CUP_rb">
+									<input name="bank" id="gdfz" type="radio" data-type="bank" value="306" /></div>
+									<label for="gdfz">
+										<img src="https://pay3.chinabank.com.cn/i/bank_gdfz.gif" alt="广东发展银行" align="middle" />
+									</label>
+								</li>
+								<li  style="clear:both;">
+                                <div class="CUP_rb">
+									<input name="bank" id="payh" type="radio" data-type="bank" value="307" /></div>
+									<label for="payh">
+										<img src="https://pay3.chinabank.com.cn/i/bank_payh.gif" alt="平安银行" align="middle" />
+									</label>
+								</li>
+								<li>
+                                <div class="CUP_rb">
+									<input name="bank" id="pfyh" type="radio" data-type="bank" value="314" /></div>
+									<label for="pfyh">
+										<img src="https://pay3.chinabank.com.cn/i/bank_pfyh.gif" alt="上海浦东发展银行" align="middle" />
+									</label>
+								</li>
+								<li>
+                                <div class="CUP_rb">
+									<input name="bank" id="zxyh" type="radio" data-type="bank" value="313"  /></div>
+									<label for="zxyh">
+										<img src="https://pay3.chinabank.com.cn/i/bank_zxyh.gif" alt="中信银行" align="middle" />
+									</label>
+								</li>
+								<li>
+                                <div class="CUP_rb">
+									<input name="bank" id="gdyh" type="radio" data-type="bank" value="312" /></div>
+									<label for="gdyh">
+										<img src="https://pay3.chinabank.com.cn/i/bank_gdyh.gif" alt="光大银行" align="middle" />
+									</label>
+								</li>
+								<li>
+                                <div class="CUP_rb">
+									<input name="bank" id="unio" type="radio" data-type="bank" value="327" /></div>
+									<label for="unio">
+										<img src="https://pay3.chinabank.com.cn/i/bank_unionpay.gif" alt="中国银联" align="middle" />
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="payMode" style="display:none;">
+						<img src="http://pic.artup.com/images/Alipay.jpg">
+					</div>
+					<div class="save-pay" style="display:none;">
+						<input type="button" id="savePay" value="保存支付方式">
+					</div>
+			</div>
+			<!-- End wait-block 支付方式结束 -->
+
+			<div class="wait-block" style="clear:both; height: 15px; overflow: hidden" id="invoiceMessage">
+				<h3 class="slide">
+					<i class=""> <!-- 折叠后  class中 去掉 active -->
+					</i><span>索要发票</span>
+				</h3>
+				<div class="user-row title" >
+					<span class="user-col-1">发票抬头：</span> <span class="user-col-1"><label data-id="0">个人</label></span> <span class="user-col-1"><label data-id="1">单位</label></span>
+						<input id="invoiceName" type="text" placeholder="请填入单位名称或者个人" value="">
+				</div>
+				<div class="user-row detail">
+					<span class="user-col-1">发票明细：</span>
+					<span class="user-col-1"><label data-id="0">艺术画</label></span>
+					<span class="user-col-1"><label data-id="1">艺术画芯</label></span>
+					<span class="user-col-1"><label data-id="2">艺术品</label></span>
+					<span class="user-col-1"><label data-id="3">工艺品</label></span>
+					<span class="user-col-1"><label data-id="4">礼品</label></span>
+				</div>
+				<div>
+					<input type="hidden" id="invoiceType" value="" />
+					<input type="hidden" id="invoiceNameHidden" value="" />
+					<input type="hidden" id="invoiceDetail" value="" />
+					<input class="btn-xn" id="saveInvoice" type="button" value="保存发票信息"/><input class="btn-xn btn-xn-c cancel" type="button" value="取消"/>
+				</div>
+			</div>
+
+			<div class="wait-block prel">
+				<h3>
+					<i class="active"></i>试用优惠券
+				</h3>
+				<div class="user-row">
+					<span class="user-col-5">请输入您手中的兑换码：</span> <span
+						class="user-col-3"><input type="text"></span> <span
+						class="user-col-2 check-error"><i> <!-- 正确 父标签用  check-ok -->
+					</i>兑换码错误</span>
+				</div>
+				<div class="user-row ov">
+					<span class="user-col-6">可以优惠<i>0.00</i>元</span>
+                    <div><input class="btn-xn" type="button" value="使用优惠券"/><input class="btn-xn btn-xn-c" type="button" value="取消"/></div>
+
+				</div>
+				<p class="wait-yhq-info">
+					总商品额: ¥<span id="cntMoney">186.00</span><br> 运费: ¥10<br> 优惠: ¥<span id="coupon">0.00</span><br>应付总额：<span class="user-col-1 cart total"><b>￥186.00</b></span><br>
+				</p>
+			</div>
+
+			<div class="wait-button">
+				<input type="button" value="提交订单">
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<div class="art-footer">
+		<div class="art-footer-con">
+			<div class="art-footer-con-left">
+				<span>关注我们：</span> <img src="images/erweicode.jpg">
+			</div>
+			<div class="art-footer-con-right">
+				<a href="#">关于雅昌</a> <a href="#">加入雅昌</a> <a href="#">联系我们</a> <a
+					href="#">版权签约</a>
+			</div>
+		</div>
+	</div>
+	<div class="art-copyright">
+		<div class="art-copyright-con">京ICP备：13034505号-1&nbsp;&nbsp;北京雅昌艺术影像有限公司&nbsp;&nbsp;京公网安备11011302000949号</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.1.11.3.js"></script>
+	<script src="js/public.js"></script>
+	<script type="text/javascript" src="js/jquery-related.js"></script>
+	<script src="js/address.js"></script>
+	<script type="text/javascript" src="js/shopcheck.js"></script>
+</body>
+</html>

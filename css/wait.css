@@ -1,0 +1,174 @@
+/* custom ç­‰å¾…æ”¯ä»˜ */
+label {cursor: pointer;}
+.wait-banner-top {
+	width:100%; height: 290px; background: url(../images/wait.jpg) center bottom repeat-x; position: relative;
+}
+
+.s32{ height:32px;}
+
+.s120{ height:120px;}
+
+.f_right{ float:right;}
+.t_right{text-align:right; }
+.f-cele{ clear:both;}
+
+.f-wodr{ color:#985ba8;}
+
+.f-right{ margin-right:168px;}
+
+.wait-icon{ width:986px; margin:0 auto; height:110px;}
+
+.wait-icon ul{ margin:0; padding:0;}
+
+.wait-icon ul li{ display:block; float:left;  list-style:none; padding:0 20px; background:#fff;}
+
+.wait-icon ul li img{ display:block; width:69px; height:62px; text-align:center;}
+
+.wait-icon ul li p{font-size:18px; text-align:center;}
+
+
+.wait-written{ width:986px; margin:0 auto;}
+
+.wait-written em{font-size:18px; font-weight:700; color:#6e147f; font-style:normal;}
+
+.wait-written h5{font-size:16px;  margin:0; font-weight:inherit; line-height:30px;}
+
+.wait-written h5 i{color:#6e147f;font-style:normal; font-weight:600;}
+
+/* .wait-written span{font-size:14px;height: 25px;background: url(../images/shoppingcart-jt.jpg) right no-repeat;padding: 0 25px 0 0;line-height: 25px;} */
+
+.wait-written01 h3{ font-size:14px; text-indent:5em; font-weight:inherit; line-height:25px; padding:0; margin:0;}
+
+.wait-pay{ width: 170px;height: 36px; margin:20px 16px 160px 0;background: rgb(110, 20, 127);color: rgb(255, 255, 255);border: none;font-size: 16px; font-weight:600; float:left;letter-spacing: 0.2em;
+cursor: pointer;}
+
+.wait-pay01{ width: 170px;height: 36px; margin:20px 16px 160px 0;background: #707070;color: rgb(255, 255, 255);border: none;font-size: 16px; font-weight:600; float:left;letter-spacing: 0.2em;
+cursor: pointer;}
+
+.wait-pay:hover,.wait-pay01:hover,.wait-pay-node:hover{box-shadow: 0px 0px 5px #333;  
+}
+
+table tr td{ border-bottom:1px solid #cccccc; padding:20px 0;}
+
+
+.wait-pay-node{ width: 170px;height: 36px; margin:20px 0 0 0;background: rgb(110, 20, 127);color: rgb(255, 255, 255);border: none;font-size: 16px; font-weight:600; float:right;letter-spacing: 0.2em;
+cursor: pointer;}
+
+
+.wait-state {
+	width: 1000px; height: 160px; margin: 0 auto;
+}
+	.wait-state ul {
+		display: block; margin: 0; padding: 0; height: 60px; border-bottom: 1px solid #DDD; position: relative; list-style: none;
+	}
+	.wait-state ul li {
+		position: absolute; top: 30px; left: 0;	width: 130px; text-align: center; font-size: 16px; background:#FFFFFF;
+	}
+	.wait-state ul li.active {color: #6E147F;}
+	.wait-state ul li i {display: block; width: 90px; height: 70px; margin: 0 auto; background: url(../images/shopgroup.png) no-repeat #FFF;}
+	.wait-state ul li.wait-state-gwc {left: 0;}
+	.wait-state ul li.wait-state-hsdd {left: 288px;}
+	.wait-state ul li.wait-state-ddzf {left: 590px;}
+	.wait-state ul li.wait-state-zfcg {left: auto; right: 0;}
+	.wait-state ul li.wait-state-gwc i {background-position: 4px 0;}
+	.wait-state ul li.wait-state-hsdd i {background-position: 12px -87px;}
+	.wait-state ul li.wait-state-ddzf i {background-position: 12px -165px;}
+	.wait-state ul li.wait-state-zfcg i {background-position: 12px -254px;}
+	
+	.wait-state ul li.active.wait-state-gwc i {background-position: -94px 0;}
+	.wait-state ul li.active.wait-state-hsdd i {background-position: -88px -87px;}
+	.wait-state ul li.active.wait-state-ddzf i {background-position: -88px -165px;}
+	.wait-state ul li.active.wait-state-zfcg i {background-position: -88px -254px;}
+	
+.usercenter-dress { margin-bottom: 40px; border-top: 1px solid #DDD;}	
+	.usercenter-dress table {width: 100%; font-size: 14px; border-collapse: collapse;}
+	.usercenter-dress table thead td {padding: 15px 0;  border: none;}
+	.usercenter-dress table tbody {background: #ededed;}
+	.usercenter-dress table tbody td {padding: 10px 0 10px 10px; border: none;}
+	.usercenter-dress table tbody td address {padding: 5px 10px; margin: 0; width: 100%; line-height: 1.75em; background: #FFFFFF; width: 480px; font-style:normal}
+	.usercenter-dress table tbody td span {margin-right: 15px; cursor: pointer;}
+	.usercenter-dress table tbody td i.ok {display: block; float: left; width: 25px; height: 25px; background: url(../images/usergroup.png) -35px -248px no-repeat;}
+	.usercenter-dress table thead span,
+	.usercenter-dress table thead label {margin-right: 20px;}
+	.usercenter-dress table thead label,
+	.usercenter-dress table thead label a {color:#6E147F; text-decoration: none; cursor: pointer;}
+	.usercenter-dress span {background: none; padding: 0;}
+	
+.usercenter-order {}
+	.usercenter-order table {width:100%; border-collapse: collapse;  text-align: left; color: #666666; font-size: 14px; line-height: 1.5em;}
+	.usercenter-order table th {padding:10px 0; border: 1px solid #DDD; border-left: none; border-right: none; font-size: 16px; font-weight: normal;}
+
+.wait-beizhu {width: 100%; padding: 10px 1%; border: 1px solid #999; font-size: 14px; color: #555;}
+
+	.wait-block {
+		border-bottom: 1px solid #DDD; padding:20px;
+	}
+	.wait-block span {background: none; padding: 0; height:auto;}
+	.wait-block span.paytype-zfb,
+	.wait-block span.paytype-wx,
+	.wait-block span.paytype-wy {width: 124px; height: 35px; background: url(../images/shopgroup02.png) 0 0 no-repeat; position: relative; cursor: pointer;}
+	.wait-block span.paytype-wx {background-position: 0 -45px;}
+	.wait-block span.paytype-wy {background-position: 0 -90px;}
+	
+	.wait-block span.paytype-zfb i,
+	.wait-block span.paytype-wx i,
+	.wait-block span.paytype-wy i {
+		position: absolute; top: 8px; right: 6px; width: 20px; height: 20px;
+		background: url(../images/shopgroup02.png) 0 -166px no-repeat;
+	}
+	.wait-block span.active i {background-position:-26px -166px;}
+	
+	.wait-block h3 {padding: 0; margin: 0 0 20px; font-size: 14px; color: #6E147F; cursor: pointer;}
+	.wait-block h3 i {display:block; float: left; margin-right: 10px; width: 20px; height: 20px; background: url(../images/shopgroup02.png) -25px -138px no-repeat;}
+	.wait-block h3 i.active {background-position: 0px -138px;}
+	.wait-yhq-info {
+		position: absolute; right: 0; top: 25px; width: 150px; color: #666; margin: 0; padding: 0; line-height: 1.75em;
+	}
+	.wait-button {padding: 20px; text-align: right;}
+	.wait-button input {background: #6E147F; padding: 5px 20px; color: #FFF; border: none; font-size: 16px; cursor: pointer;}
+	.save-pay {padding: 20px; text-align: right;}
+	.save-pay input {background: #6E147F; padding: 5px 20px; color: #FFF; border: none; font-size: 16px; cursor: pointer;}
+
+input.btn-xz {padding: 4px 15px; height: auto; color: #6E147F; border: 1px solid #6E147F; margin-right:10px; cursor: pointer;}
+input.btn-xn {padding: 0 15px; height: 27px;background:none;  color: #6e147f; border: 1px solid #6e147f; margin-right:10px; cursor: pointer;font-family:"Microsoft Yahei"; }
+input.btn-xn:hover {color: #6E147F; border: 1px solid #6E147F;}
+input.btn-xn-c,input.btn-xn-c:hover{border-color:#000000;color:#000000; }
+
+.usercenter-dressadd span {background: none; margin: 0; padding: 0;}
+.Wait_yh01{display:none;}
+.Wait_yh01 .Wait_yh02{font-family:"Î¢ÈíÑÅºÚ"; font-size:14px; color:#585757; text-align:left; line-height:73px;font-weight:600; }
+.Wait_yh03{width:1186px; margin:0 auto;}
+.Wait_yh03 ul{width:1186px;height:auto; margin:0px; padding:0px;}
+.Wait_yh03 ul li{width:200px; float:left; list-style:none; margin-bottom: 20px; margin-top: 10px;}
+.Wait_yh03 ul li img{width:130px;}
+.Wait_yh04{width:1000px; margin:0 auto;}
+.Wait_yh05{width:202px; height:33px;  font-family:"Î¢ÈíÑÅºÚ"; font-size:16px; color:#fff; text-align:center; line-height:33px; font-weight:600; background:url(../images/zfcg_bj.jpg) no-repeat;}
+.Wait_yh05 a{color:#fff; text-decoration:none;}
+.Wait_yh05 a:hover{color:#fff; text-transform:none;}
+.CUP_rb {height: 25px;padding-top: 20px;width: 30px;float: left;}
+
+.Alipay {padding-bottom: 20px;height: 40px;}
+.Alipay_left {width: 80px;height: 40px;line-height: 40px;float: left;text-align: left;padding-right: 30px;}
+.Alipay_left label {padding-left: 5px;}
+.Alipay_right, .Alipay_fhsc {float: left;}
+.CUP {padding-bottom: 10px;overflow: hidden;}
+#bankselect input{border:0px;}
+#savePay{cursor: pointer; margin-right: -30px;margin-top: 10px;}
+#simg{height: 100px;width: 100px;} 
+
+.wait-check .addressCon .tbody .td address{width:830px;}
+.wait-check .addressCon .user-row{cursor:pointer;background:url(../images/address_bg.png) 10px 10px #FFFFFF no-repeat; }
+.wait-check .addressCon .usercenter-dressaddcon .user-row{background:none; }
+.total{font-size:18px;}
+.user-col-6 i{font-style:normal;}
+.ov{overflow:visible; }
+.wait-check .userorderlist th{font-size:18px;}
+.wait-check .userorderlist th,.wait-check .userorderlist td{text-align:left;color:#000000;  }
+.wait-check .userorderlist td{padding:30px 0;}
+.wait-check .userorderlist td img{margin:0 auto;display:block;  }
+.wait-check .userorderlist td i{font-size:18px;font-style:normal;}
+.wait-check .userorderlist td i.bold{font-weight:bold;}
+
+.totalPrice{padding-right:25px!important; text-align:right!important; }
+.priceFont{font-size:18px;}
+.totalPrice a{font-size:14px;text-decoration:none; color:#000000; }
